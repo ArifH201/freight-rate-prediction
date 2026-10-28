@@ -1,0 +1,6 @@
+model,MAE,RMSE,MAPE,MedAPE,MAE_noSpike,RMSE_noSpike,MAPE_noSpike,MedAPE_noSpike
+Naive: distance x median $/mile by equipment,225.307,677.774,10.431,6.838,172.274,246.243,7.832,6.559
+"LightGBM lane model, no date adjustment",129.061,649.003,5.342,2.792,73.664,101.771,3.056,2.754
+LightGBM + recent level (30d),119.687,643.708,5.052,2.379,64.251,92.484,2.728,2.344
+FINAL: LightGBM + recent level + market_index,113.52,643.653,4.783,2.132,57.989,83.752,2.471,2.101
+Final + label-spike cleaning (|resid|>0.25),113.459,643.573,4.78,2.128,57.941,83.731,2.471,2.095
